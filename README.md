@@ -11,8 +11,7 @@ The objective of this project is to build, evaluate, and deploy multiple machine
 - **Features:** 21 features (exceeding the 12 minimum feature requirement).
 
 ## c. Github Repository Link
-**Link:** `[INSERT YOUR GITHUB REPOSITORY LINK HERE]`
-
+**Link:** https://github.com/2025ac05940-AtishGosavi/2025AC05940_ML_Assignmet_2.git
 ## d. Models Used and Evaluation Metrics
 The following 5 classification models were implemented and evaluated on the test set:
 
