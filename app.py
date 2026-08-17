@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 # title
 st.title("Machine Learning Assignment 2")
-st.write("Student ML Model Evaluator for Diabetes Dataset")
+st.write("Comparative Analysis of ML Models for Diabetes Prediciton")
 
 # User inputs
 st.sidebar.header("User Inputs")
@@ -73,7 +73,13 @@ if uploaded_file is not None:
 
     # d. Confusion matrix or classification report
     st.subheader("Classification Report")
-    st.text(classification_report(y_test, y_pred))
+    #st.text(classification_report(y_test, y_pred, output_dict=True))
+    report_dict = classification_report(y_test, y_pred, output_dict=True)
+
+    report_df = pd.DataFrame(report_dict).transpose()
+
+    st.dataframe(report_df)
+    
 
     st.subheader("Confusion Matrix")
     cm = confusion_matrix(y_test, y_pred)
