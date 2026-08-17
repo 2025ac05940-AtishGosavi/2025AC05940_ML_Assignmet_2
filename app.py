@@ -84,7 +84,7 @@ if uploaded_file is not None:
     st.subheader("Confusion Matrix")
     cm = confusion_matrix(y_test, y_pred)
     fig, ax = plt.subplots()
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax)
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax, linewidths=1, linecolor='b')
     st.pyplot(fig)
 
 else:
